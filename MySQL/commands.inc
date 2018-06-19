@@ -1772,12 +1772,12 @@ CMD:crash2(playerid, params[])
 	if (playerData[playerid][pd_AdminRank] < playerData[targetid][pd_AdminRank]) return SendScreenMessage(playerid, LOCALE_MESSAGE_CANTUSECOMMANDONTHATPLAYER);
 	if (IsPlayerInGame(targetid) && playerData[targetid][pd_IsLoggedIn]) {
 	CMDMessageToAdmins(playerid, "CRASH2");
-	GameTextForPlayer(targetid, "â€¢Â¤Â¶Â§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 1);
-	GameTextForPlayer(targetid, "â€¢Â¤Â¶Â§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 2);
-	GameTextForPlayer(targetid, "â€¢Â¤Â¶Â§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 3);
-	GameTextForPlayer(targetid, "â€¢Â¤Â¶Â§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 4);
-	GameTextForPlayer(targetid, "â€¢Â¤Â¶Â§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 5);
-	GameTextForPlayer(targetid, "â€¢Â¤Â¶Â§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 6);
+	GameTextForPlayer(targetid, "•¤¶§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 1);
+	GameTextForPlayer(targetid, "•¤¶§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 2);
+	GameTextForPlayer(targetid, "•¤¶§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 3);
+	GameTextForPlayer(targetid, "•¤¶§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 4);
+	GameTextForPlayer(targetid, "•¤¶§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 5);
+	GameTextForPlayer(targetid, "•¤¶§!$$%&'()*+,-./01~!@#$^&*()_-+={[}]:;'<,>.?/", 5000, 6);
 	format(string, sizeof string, "   You have crashed %s game client.", ReturnPlayerName(targetid) );
 	return SendClientMessage(playerid,COLOR_NOTIFY, string);
 	} else return SendScreenMessage(playerid, LOCALE_MESSAGE_INVALIDPLAYER);
