@@ -6,3 +6,5 @@ This script was later leaked by xMx and he used it in his COD:AW release and rem
 The script contains all the source code and you'll find that it's very resembling to what Yousha or (I, previously) released.
 
 You can find the original topic here: http://forum.sa-mp.com/showthread.php?p=4026930
+
+### Licensed under MIT - all credits must be given to the respective developers
